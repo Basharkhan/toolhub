@@ -1,4 +1,4 @@
-import { Clock3, Type } from 'lucide-react'
+import { Clock3, KeyRound, Type } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 function HomePage() {
@@ -15,6 +15,12 @@ function HomePage() {
       description: 'Count words and characters instantly',
       href: '/word-counter',
     },
+    {
+      icon: KeyRound,
+      name: 'Password Generator',
+      description: 'Create strong passwords with customizable rules.',
+      href: '/password-generator',
+    },
   ]
 
   return (
@@ -29,7 +35,7 @@ function HomePage() {
           </p>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-3xl gap-4 sm:grid-cols-2">
+        <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {tools.map((tool) => (
             <article
               key={tool.name}
@@ -50,7 +56,7 @@ function HomePage() {
               <div className="mt-6">
                 <Link
                   to={tool.href}
-                  className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2.5 text-center text-sm font-medium !text-white shadow-sm transition-colors hover:bg-slate-800 active:bg-slate-950 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-2"
+                  className="inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-2.5 text-center text-sm font-medium !text-white shadow-sm transition-colors hover:bg-slate-800 active:bg-slate-950 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-2"
                 >
                   Use Tool
                 </Link>
