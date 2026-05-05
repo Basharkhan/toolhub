@@ -1,4 +1,4 @@
-import { Clock3, KeyRound, Type } from 'lucide-react'
+import { Clock3, KeyRound, Type, Weight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 function HomePage() {
@@ -14,6 +14,12 @@ function HomePage() {
       name: 'Word Counter',
       description: 'Count words and characters instantly',
       href: '/word-counter',
+    },
+    {
+      icon: Weight,
+      name: 'BMI Calculator',
+      description: 'Calculate your body mass index in metric or imperial units.',
+      href: '/bmi-calculator',
     },
     {
       icon: KeyRound,

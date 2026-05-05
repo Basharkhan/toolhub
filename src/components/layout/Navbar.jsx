@@ -5,6 +5,7 @@ import PageContainer from './PageContainer'
 
 const NAV_LINKS = [
   { to: '/age-calculator', label: 'Age Calculator' },
+  { to: '/bmi-calculator', label: 'BMI Calculator' },
   { to: '/word-counter', label: 'Word Counter' },
   { to: '/password-generator', label: 'Password Generator' },
 ]
